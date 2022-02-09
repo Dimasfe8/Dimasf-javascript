@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let arrayKosong = [];
+        let namaArray = ["Dimas", "Mughis", "Fadhil"]
+
+        const nama = []
+        nama.push("Dimas")
+        nama.push("mughis", "fadhil")
+        nama[1] = "Fathur"
+
+        console.log(nama[1])
+        console.log(nama[2])
+        console.table(nama)
+        console.log(nama.length)
+
+        delete(nama[1])
+
+        nama.push("ersan")
+        nama[1] = "nan"
+        nama.push (1,2,3)
+        nama.push(["Dimas", "Fathur", "ersan"])
+
+        console.table(nama)
+    </script>
+</body>
+</html>

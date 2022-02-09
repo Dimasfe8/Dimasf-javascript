@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        const org = {
+            "nama" : "Dimas Febriansyah",
+            alamat : "Sukabumi",
+            umur : "17"
+        }
+
+       // console.table(org)
+
+        //org["nama"] = "Dimas Febriansyah"
+        //org["alamat"] = "Kp babakan"
+        //org["umur"] = "16"
+
+        console.log(`Nama : ${org["nama"]}`)
+        console.log(`Alamat : ${org.alamat}`)
+        console.log(`Umur : ${org.umur}`)
+
+        console.table(org)
+
+        delete org["umur"]
+
+        console.table(org)
+    </script>
+</body>
+</html>
