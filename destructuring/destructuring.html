@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desctructuring</title>
+</head>
+<body>
+    <script>
+        {
+        const names = ["Dimas", "Febriansyah", "budi", "fadhil"]
+        let [firstName, lastName, ...bebas] = names
+
+        console.log(firstName)
+        console.log(lastName)
+        console.log(bebas)
+        }
+        {
+        const person = {
+            firstName: "Dimas",
+            lastName: "Febriansyah",
+            address: {
+                street: "babakan",
+                city: "Sukabumi",
+                country : "Indonesia"
+            },
+            hobby: "Game"
+        }
+        let {firstName,lastName, address:{city, street, country}, ...bebas} = person
+        console.log(firstName)
+        console.log(lastName)
+        console.log(city)
+        console.log(street)
+        console.log(country)
+        console.log(bebas)
+        }
+
+        {
+            function displayPerson(person){
+                console.log(person.firstName)
+                console.log(person.lastName)
+            }
+
+            const person = {
+                firstName : "Dimas",
+                lastName : "Febriansyah"
+            }
+
+            displayPerson(person)
+        }
+        {
+            function sum ([first, second]){
+                return first + second
+            }
+
+            console.log(sum([1,1]))
+            console.log(sum([20,10]))
+        }
+
+
+        {
+            const names = ["Dimas"]
+            const [firstName, lastName= "Febriansyah"] = names
+
+            console.log(firstName)
+            console.log(lastName)
+        }
+
+        {
+            const person = {
+            firstName: "Dimas",
+            lastName: "Febriansyah"
+            
+        }
+        let {firstName,lastName = "Febriansyah"} = person
+        console.log(firstName)
+        console.log(lastName)
+        }
+
+        {
+            const person = {
+            firstName: "Dimas",
+            lastName: "Budi"
+            
+        }
+        let {firstName: namaDepan
+        ,lastName: namaBelakang = "Febriansyah"} = person
+        console.log(namaDepan)
+        console.log(namaBelakang)
+        }
+    </script>
+</body>
+</html>
